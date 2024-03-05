@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Step Teachers</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/stepfavicon.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/pending.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/fullcalendar/fullcalendar.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/quill/editor.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/@form-validation/umd/styles/index.min.css"
+    />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="assets/vendor/css/pages/app-calendar.css" />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+       <!-- Menu -->
+
+       <aside
+       id="layout-menu"
+       class="layout-menu menu-vertical menu bg-menu-theme"
+     >
+       <div class="app-brand demo">
+         <a href="" class="app-brand-link">
+           
+           <span class="app-brand-text demo menu-text fw-bold">
+             <img height="42" src="assets/img/branding/step-teachers-logo (1).png" />
+           </span>
+         </a>
+
+         <a
+           href="javascript:void(0);"
+           class="layout-menu-toggle menu-link text-large ms-auto"
+         >
+           <i
+             class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"
+           ></i>
+           <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+         </a>
+       </div>
+
+       <div class="menu-inner-shadow"></div>
+
+       <ul class="menu-inner py-1">
+      
+        
+
+         <!--Menu -->
+         <li class="menu-header small text-uppercase">
+          <span class="menu-header-text" data-i18n="Menu">Menu</span>
+        </li>
+        <li class="menu-item">
+          <a href="Dashboard.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-dashboard"></i>
+            <div data-i18n="Dashboard">Dashboard</div>
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="pending.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+            <div data-i18n="Pending">Pending</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="completed.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-checkbox"></i>
+            <div data-i18n="Completed">Completed</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pullout.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
+            <div data-i18n="Pullout">Pullout</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Candidates.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-users"></i>
+            <div data-i18n="Candidates">Candidates</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="layouts-school-screen.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-layout-grid"></i>
+            <div data-i18n="School Screen">School Screen</div>
+          </a>
+        </li>
+        </ul>
+       </aside>
+
+       <!--Menu End-->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a
+                    class="nav-item nav-link search-toggler d-flex align-items-center px-0"
+                    href="javascript:void(0);"
+                  >
+                    <i class="ti ti-search ti-md me-2"></i>
+                    <span class="d-none d-md-inline-block text-muted"
+                      >Search (Ctrl+/)</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                <!-- Style Switcher -->
+                <li
+                  class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="ti ti-md"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="light"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-sun me-2"></i>Light</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="dark"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-moon me-2"></i>Dark</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="system"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-device-desktop me-2"></i>System</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- / Style Switcher-->
+
+                <!-- Notification -->
+                <li
+                  class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <i class="ti ti-bell ti-md"></i>
+                    <span
+                      class="badge bg-danger rounded-pill badge-notifications"
+                      >5</span
+                    >
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div
+                        class="dropdown-header d-flex align-items-center py-3"
+                      >
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li
+                      class="dropdown-notifications-list scrollable-container"
+                    >
+                    <ul class="list-group list-group-flush">
+                      <li
+                        class="list-group-item list-group-item-action dropdown-notifications-item"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img
+                                src="assets/img/avatars/1.png"
+                                alt
+                                class="h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Congratulations Lettie 🎉</h6>
+                            <p class="mb-0">
+                              Ten years teaching
+                            </p>
+                            <small class="text-muted">1h ago</small>
+                          </div>
+                          <div
+                            class="flex-shrink-0 dropdown-notifications-actions"
+                          >
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-action dropdown-notifications-item"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span
+                                class="avatar-initial rounded-circle bg-label-danger"
+                                >CF</span
+                              >
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Charles Franklin</h6>
+                            <p class="mb-0">Accepted the assignment</p>
+                            <small class="text-muted">12hr ago</small>
+                          </div>
+                          <div
+                            class="flex-shrink-0 dropdown-notifications-actions"
+                          >
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-action dropdown-notifications-item"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span
+                                class="avatar-initial rounded-circle bg-label-success"
+                                ><i class="ti ti-phone-calling"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Whoo! You have new contact</h6>
+                            <p class="mb-0">
+                              Mr Brian Belson, Head of ICT
+                            </p>
+                            <small class="text-muted">1 day ago</small>
+                          </div>
+                          <div
+                            class="flex-shrink-0 dropdown-notifications-actions"
+                          >
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img
+                                src="assets/img/avatars/9.png"
+                                alt
+                                class="h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">
+                              Assignment has been sent 🚀
+                            </h6>
+                            <p class="mb-0">
+                              Waiting on approval/acceptance.
+                            </p>
+                            <small class="text-muted">2 days ago</small>
+                          </div>
+                          <div
+                            class="flex-shrink-0 dropdown-notifications-actions"
+                          >
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span
+                                class="avatar-initial rounded-circle bg-label-success"
+                                ><i class="ti ti-chart-pie"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Monthly report is generated</h6>
+                            <p class="mb-0">
+                              Feb monthly financial report is generated
+                            </p>
+                            <small class="text-muted">3 days ago</small>
+                          </div>
+                          <div
+                            class="flex-shrink-0 dropdown-notifications-actions"
+                          >
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <span
+                                class="avatar-initial rounded-circle bg-label-warning"
+                                ><i class="ti ti-alert-triangle"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">CPU is running high</h6>
+                            <p class="mb-0">
+                              CPU Utilization Percent is currently at 88.63%,
+                            </p>
+                            <small class="text-muted">5 days ago</small>
+                          </div>
+                          <div
+                            class="flex-shrink-0 dropdown-notifications-actions"
+                          >
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a
+                              href="javascript:void(0)"
+                              class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center"
+                      >
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="assets/img/avatars/1.png"
+                        alt
+                        class="h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-account.html"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="assets/img/avatars/1.png"
+                                alt
+                                class="h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-profile-user.html">
+                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-account.html"
+                      >
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-billing.html"
+                      >
+                        <span class="d-flex align-items-center align-middle">
+                          <i
+                            class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"
+                          ></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span
+                            class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20"
+                            >2</span
+                          >
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-faq.html">
+                        <i class="ti ti-help me-2 ti-sm"></i>
+                        <span class="align-middle">FAQ</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-pricing.html">
+                        <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                        <span class="align-middle">Pricing</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="auth-login-cover.html"
+                        target="_blank"
+                      >
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper d-none">
+              <input
+                type="text"
+                class="form-control search-input container-xxl border-0"
+                placeholder="Search..."
+                aria-label="Search..."
+              />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <!-- Layout Demo -->
+              <h4 class="py-3 mb-4">
+                <span class="text-muted fw-light">Assignment /</span> Step
+                Teachers (413706)
+              </h4>
+              <div>
+                <ul class="list-unstyled mb-2">
+                  <li class="mb-3 pb-1">
+                    <div class="d-flex align-items-start">
+                      <div
+                        class="d-flex justify-content-between w-100 flex-wrap gap-2"
+                      >
+                        <div class="me-2">
+                          <div class="d-flex">
+                            <button
+                              type="button"
+                              class="btn btn-label-warning me-2"
+                            >
+                              Open
+                            </button>
+                            <input
+                              type="text"
+                              id="collapsible-fullname"
+                              class="form-control"
+                              placeholder="627324"
+                            />
+                          </div>
+                        </div>
+                        <button class="btn btn-warning" type="button" disabled>
+                          <span
+                            class="spinner-grow me-1"
+                            role="status"
+                            aria-hidden="true"
+                          ></span>
+                          Pending...
+                        </button>
+                        <div
+                          class="alert d-flex align-items-center bg-label-warning mb-0"
+                        >
+                          <div class="me-2">
+                            <p class="mb-0">
+                              <small
+                                >Last Run by Marios Georgiou on 29 Jan 2024 |
+                                11:34</small
+                              >
+                            </p>
+                          </div>
+
+                          <p class="mb-0">
+                            <small
+                              >| Taken by Marios Georgiou on 29 Jan 2024 |
+                              11:34</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <!-- Left -->
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 mb-4 order-md-2 order-lg-0">
+                  <div class="card">
+                    <div
+                      class="card-header pb-0 d-flex justify-content-between"
+                    >
+                      <div class="card-title mb-2">
+                        <h5 class="mb-0">Step Teachers High</h5>
+                        <p class="text-muted">
+                          <span class="badge bg-label-warning mb-0">Site</span>
+                          Main Site
+                        </p>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="supportTrackerMenu"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="ti ti-dots-vertical ti-sm text-muted"></i>
+                        </button>
+                        <div
+                          class="dropdown-menu dropdown-menu-end"
+                          aria-labelledby="supportTrackerMenu"
+                        >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >View More</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >Delete</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-0" />
+
+                    <!--in right-->
+                    <div class="row p-sm-3 px-2">
+                      <div
+                        class="col-xl-5 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4"
+                      >
+                        <div id="supportTracker">
+                          <div class="12">
+                            <label class="form-label" for="collapsible-address"
+                              >Address
+                              <span class="ti ti-map"></span>
+                            </label>
+                            <textarea
+                              name="collapsible-address"
+                              class="form-control"
+                              id="collapsible-address"
+                              rows="2"
+                              placeholder="South Point House, 321 Chase Road"
+                            ></textarea>
+                          </div>
+
+                          <div class="col-md-12">
+                            <label class="form-label" for="collapsible-city"
+                              >City</label
+                            >
+                            <input
+                              type="text"
+                              id="collapsible-city"
+                              class="form-control"
+                              placeholder="London"
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <label class="form-label" for="collapsible-city"
+                              >Post Code</label
+                            >
+                            <input
+                              type="text"
+                              id="collapsible-city"
+                              class="form-control"
+                              placeholder="N14 6JT"
+                            />
+                          </div>
+                        </div>
+
+                        <!--in left-->
+
+                        <!--in left-->
+                      </div>
+                      <div class="col-xl-7 col-md-12 col-sm-7 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4">
+                        <div id="supportTracker">
+                          <div class="demo-inline-spacing mb-3">
+                            <button type="button" class="btn btn-warning">
+                              Direct Sale
+                            </button>
+                            <button type="button" class="btn btn-warning">
+                              Direct Booking
+                            </button>
+                            <p class="mb-0">*(If known)</p>
+                          </div>
+
+                          <div class="demo-inline-spacing d-flex justify-content-start mb-3">
+                            <button type="button" class="btn btn-outline-warning">
+                              SMS
+                            </button>
+                            <button type="button" class="btn btn-icon btn-outline-warning">
+                              <span class="ti ti-phone-calling"></span>
+                            </button>
+    
+                            <button type="button" class="btn btn-outline-warning">
+                              History
+                            </button>
+    
+                            <button type="button" class="btn btn-icon btn-outline-warning">
+                              <span class="ti ti-mail"></span>
+                            </button>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between w-100 table-responsive"
+                          >
+                            <table class="table table-bordered">
+                              <tr>
+                                <th>S</th>
+                                <th>General</th>
+                                <th>Number</th>
+                                <th>Ext</th>
+                              </tr>
+                              <tr>
+                                <td>S</td>
+                                <td>Telephone</td>
+                                <td class="text-nowrap">020 88826246</td>
+                                <td>-</td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr class="my-4" />
+
+                      <!--Table-->
+
+                      <!--Table-->
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="pend card text-nowrap mt-4 table-responsive">
+                      <table class="pending-table">
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <th>
+                              <span class="fw-medium"
+                                ><small>Contact</small></span
+                              >
+                            </th>
+                            <th><small>Position *(Timesheets)</small></th>
+                            <th><small>CoS</small></th>
+                            <th><small>N</small></th>
+                            <th><small>Site</small></th>
+                            <th><small>Number</small></th>
+                            <th><small>Ext</small></th>
+                            <th><small>Type</small></th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Mr Mario Georgiou</small></span
+                              >
+                            </td>
+                            <td><small>Chair of Governors</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small></small></td>
+                            <td><small>S</small></td>
+                            <td><small></small></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Ms Joanie Smith</small></span
+                              >
+                            </td>
+                            <td><small>Finance Officer</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small>01236 98569</small></td>
+                            <td><small></small></td>
+                            <td><small>Finance</small></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Mr Ben Pearson</small></span
+                              >
+                            </td>
+                            <td><small>Head of ICT</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small>07967 059703</small></td>
+                            <td><small>H</small></td>
+                            <td><small>Cos Mobile</small></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Mr Brian Belson</small></span
+                              >
+                            </td>
+                            <td><small>Head of ICT</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small></small></td>
+                            <td><small>H</small></td>
+                            <td><small></small></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="form-check form-check-warning mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="customCheckPrimary"
+                      checked
+                    />
+                    <label
+                      class="form-check-label"
+                      for="customCheckPrimary"
+                    ></label>
+                  </div>
+                  <div class="row">
+                    <div
+                      class="col-xl-6 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4 demo-inline-spacing"
+                    >
+                      <button type="button" class="btn btn-label-warning me-2">
+                        History</button
+                      ><button type="button" class="btn btn-label-warning me-2">
+                        CV Search</button
+                      ><button type="button" class="btn btn-label-warning me-2">
+                        Conf list
+                      </button>
+                    </div>
+                    <div
+                      class="col-xl-6 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4 demo-inline-spacing"
+                    >
+                      <div class="d-flex">
+                        <button
+                          type="button"
+                          class="btn btn-label-warning me-2 text-nowrap"
+                        >
+                          Max Miles
+                        </button>
+                        <div class="col-md-4">
+                          <input
+                            type="text"
+                            id="collapsible-fullname"
+                            class="form-control"
+                            placeholder="20"
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-label-warning ms-2 p-2 text-nowrap"
+                        >
+                          <span class="ti ti-world"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="my-4" />
+                  <div class="col-xl-12">
+                    <div class="nav-align-top mb-4">
+                      <ul class="nav nav-pills mb-3" role="tablist">
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link active"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-candidate"
+                            aria-controls="navs-pills-justified-candidate"
+                            aria-selected="true"
+                          >
+                            Candidate
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-contacted"
+                            aria-controls="navs-pills-justified-contacted"
+                            aria-selected="false"
+                          >
+                            <i
+                              class="tf-icons ti ti-message-dots ti-xs me-1"
+                            ></i>
+                            Contacted
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-shortlisted"
+                            aria-controls="navs-pills-justified-shortlisted"
+                            aria-selected="false"
+                          >
+                            <i class="tf-icons ti ti-list-check ti-xs me-1"></i>
+                            Shortlist
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-web"
+                            aria-controls="navs-pills-justified-web"
+                            aria-selected="false"
+                          >
+                            <i class="tf-icons ti ti-world ti-xs me-1"></i> Web
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-pills-justified-finance"
+                            aria-controls="navs-pills-justified-finance"
+                            aria-selected="false"
+                          >
+                            <i class="tf-icons ti ti-moneybag ti-xs me-1"></i
+                            >Finance
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div
+                          class="tab-pane fade show active"
+                          id="navs-pills-justified-candidate"
+                          role="tabpanel"
+                        >
+                          <div
+                            id="accordionOne"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <div class="row p-0">
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <label
+                                        class="form-label"
+                                        for="collapsible-fullname"
+                                        >Open</label
+                                      >
+                                      <input
+                                        type="text"
+                                        id="collapsible-fullname"
+                                        class="form-control"
+                                        placeholder="0"
+                                      />
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <label
+                                        class="form-label"
+                                        for="collapsible-fullname"
+                                        >Miles</label
+                                      >
+                                      <input
+                                        type="text"
+                                        id="collapsible-fullname"
+                                        class="form-control"
+                                        placeholder=""
+                                      />
+                                    </div>
+                                    <div class="col-md-12">
+                                      <label
+                                        class="form-label"
+                                        for="collapsible-fullname"
+                                        >Candidate</label
+                                      >
+                                      <input
+                                        type="text"
+                                        id="collapsible-fullname"
+                                        class="form-control"
+                                        placeholder="Mr Mario Georgiou"
+                                      />
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div
+                                        class="d-flex flex-wrap gap-3 demo-inline-spacing"
+                                      >
+                                        <button
+                                          type="button"
+                                          class="btn btn-icon btn-outline-warning"
+                                        >
+                                          <span class="ti ti-book"></span>
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-icon btn-outline-warning"
+                                        >
+                                          <span
+                                            class="ti ti-currency-pound"
+                                          ></span></button
+                                        ><button
+                                          type="button"
+                                          class="btn btn-icon btn-outline-warning"
+                                        >
+                                          <span
+                                            class="ti ti-phone-check"
+                                          ></span></button
+                                        ><button
+                                          type="button"
+                                          class="btn btn-icon btn-outline-warning"
+                                        >
+                                          <span
+                                            class="ti ti-device-mobile-message"
+                                          ></span>
+                                        </button>
+
+                                        <button
+                                          type="button"
+                                          class="btn btn-outline-warning"
+                                        >
+                                          History
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <table class="table table-bordered mt-4">
+                                        <tbody class="table-border-bottom-0">
+                                          <tr>
+                                            <th>Type</th>
+                                            <th>Phone</th>
+                                          </tr>
+                                          <tr>
+                                            <td>Mobile</td>
+                                            <td>07939 0774987</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                  <div class="divider">
+                                    <div class="divider-text">Directions</div>
+                                  </div>
+                                  <div
+                                    class="d-flex justify-content-between w-100 flex-wrap gap-2 demo-inline-spacing"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-warning w-100 ms-xl-3 ms-lg-3"
+                                    >
+                                      Road route
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-warning w-100 ms-xl-3 ms-lg-3"
+                                    >
+                                      London Route
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn btn-warning w-100 ms-xl-3 ms-lg-3"
+                                    >
+                                      Specialist
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-check form-check-warning mt-3">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="customCheckPrimary"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="customCheckPrimary"
+                            ></label>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="navs-pills-justified-contacted" role="tabpanel">
+                          <div class="row">
+                            <div class="col-xl-4 col-lg-8 col-md-8 col-sm-6 col-8">
+                              <table class="cont-table mb-3">
+                                <tr>
+                                  <td class="border">Phone</td>
+                                  <td class="border pe-5">Type</td>
+                                </tr>
+                                <tr>
+                                  <td class="border pb-5">07931 517256</td>
+                                  <td class="border pb-5 pe-5">Mobile</td>
+                                </tr>
+                              </table>
+                              <button class="sm-btn btn-sm btn-label-warning">
+                                Auto SMS
+                              </button>
+                              <button class="sm-btn btn-sm btn-label-warning">
+                                Text Message
+                              </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-4">
+                              <button class="log-btn btn-sm btn-warning">
+                                No answer
+                              </button>
+                              <button class="log-btn btn-sm btn-warning">
+                                A/ Machine
+                              </button>
+                              <button class="log-btn btn-sm btn-warning">
+                                Engaged
+                              </button>
+                              <button class="log-btn btn-sm btn-warning">
+                                Will do asn
+                              </button>
+                              <button class="log-btn btn-sm btn-warning">
+                                Will not do
+                              </button>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mt-2">
+                              <form action="">
+                                <div class="row mb-2">
+                                  <label class="pe-2 col-5" for="smethod"
+                                    >Contact Method</label
+                                  >
+                                  <select
+                                    name="smethod"
+                                    id=""
+                                    class="pe-5 col-7"
+                                  >
+                                    <option value="phone">Phone</option>
+                                    <option value="email">Email</option>
+                                    <option value="sms">SMS</option>
+                                  </select>
+                                </div>
+                                <div class="row mb-2">
+                                  <span class="pe-2 col-5">Call Direction</span>
+                                  <div class="border col-7 m-0">
+                                    <input
+                                      type="radio"
+                                      id=""
+                                      name="inbound"
+                                      value="inbound"
+                                    />
+                                    <label for="inbound">Inbound</label>
+                                    <input
+                                      type="radio"
+                                      id=""
+                                      name="outbound"
+                                      value="outbound"
+                                    />
+                                    <label for="outbound">Outbound</label>
+                                  </div>
+                                </div>
+                                <div class="row mb-2">
+                                  <label class="pe-2 col-5" for="smethod"
+                                    >Outcome</label
+                                  >
+                                  <select
+                                    name="smethod"
+                                    id=""
+                                    class=" col-7"
+                                  >
+                                  <option value="interview arranged">Interview Arranged</option>
+                                  <option value="explained assignment">Explained Assignment</option>
+                                  <option value="cancellation">Cancellation</option>
+                                  <option value="did not accept offer">Did not accept offer</option>
+                                  </select>
+                                </div>
+                                <div class="row mb-2">
+                                  <label class="pe-2 col-5" for="contact-name"
+                                    >Contact Name</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="contact-name"
+                                    id=""
+                                    class="col-7"
+                                  />
+                                </div>
+                                <div class="row mb-2">
+                                  <label class="pe-2 col-5" for="">Notes</label>
+                                  <textarea
+                                    name=""
+                                    id=""
+                                    cols="50"
+                                    rows="2"
+                                    class="col-7"
+                                  ></textarea>
+                                </div>
+                                <button
+                                  type="submit"
+                                  class="btn btn-sm btn-outline-warning"
+                                >
+                                  Log Contact
+                                </button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="navs-pills-justified-shortlisted" role="tabpanel">
+                          <div>
+                            <div class="row">
+                              <div class="col-xl-6 col-lg-4 col-md-4 col-sm-4">
+                                <p>Record Count: 164</p>
+                              </div>
+                              <div class="col-xl-6 col-lg-8 col-md-8 col-sm-8">
+                                <button class="btn btn-label-warning btn-sm m-1">Do not use</button>
+                                <button class="btn btn-label-warning btn-sm m-1">Add to list</button>
+                                <button class="btn btn-label-warning btn-sm m-1">Choose</button>
+                              </div>
+                            </div>
+
+                            <div class="short-table">
+                              <table>
+                                <tr>
+                                  <th>ID</th>
+                                  <th>S</th>
+                                  <th>TchName</th>
+                                  <th>Location</th>
+                                  <th>PCode</th>
+                                  <th>Miles</th>
+                                  <th>Class</th>
+                                  <th>Status</th>
+                                  <th>KSTrack</th>
+                                  <th>Trained</th>
+                                  <th>KSMatch</th>
+                                  <th>Subject</th>
+                                  <th>Continuity</th>
+                                  <th>Out</th>
+                                  <th>LstGrd</th>
+                                  <th>Wrkd</th>
+                                  <th>VettedD2D</th>
+                                  <th>Priority</th>
+                                </tr>
+                                <tr>
+                                  <td>290210</td>
+                                  <td></td>
+                                  <td>Jermaine Joseph-We</td>
+                                  <td>None</td>
+                                  <td>NW3</td>
+                                  <td>2.2</td>
+                                  <td>QTS</td>
+                                  <td>Prov-Original</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td>100%</td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td>Exc.</td>
+                                </tr>
+                                <tr>
+                                  <td>298003</td>
+                                  <td></td>
+                                  <td>Bernadette Nykiel</td>
+                                  <td>Borehamwood</td>
+                                  <td>WD6</td>
+                                  <td>7.3</td>
+                                  <td>FE.trained</td>
+                                  <td>Prov-Restricted</td>
+                                  <td>Sec</td>
+                                  <td>FE</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td>Multi</td>
+                                </tr>
+                                <tr>
+                                  <td>298045</td>
+                                  <td></td>
+                                  <td>Sahar Khatiri</td>
+                                  <td>Broxbourne</td>
+                                  <td>EN10</td>
+                                  <td>8.9</td>
+                                  <td>QTS</td>
+                                  <td>Prov-Original</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td>Multi</td>
+                                </tr>
+                                <tr>
+                                  <td>285516</td>
+                                  <td></td>
+                                  <td>Alina Apopei</td>
+                                  <td>London</td>
+                                  <td>N13</td>
+                                  <td>1.4</td>
+                                  <td>QTS - O/S Trained</td>
+                                  <td>Prov - Restricted</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td>100%</td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>192897</td>
+                                  <td></td>
+                                  <td>Anne Carolan</td>
+                                  <td>London</td>
+                                  <td>N13</td>
+                                  <td>1.4</td>
+                                  <td>QTS - O/S Trained</td>
+                                  <td>Prov - Original</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td>100%</td>
+                                  <td>B List</td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>204384</td>
+                                  <td></td>
+                                  <td>Kad Zarif</td>
+                                  <td>London</td>
+                                  <td>N21</td>
+                                  <td>2</td>
+                                  <td>Instructor - QTS</td>
+                                  <td>Prov - Restricted</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td>25%</td>
+                                  <td>A List</td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>178817</td>
+                                  <td></td>
+                                  <td>Suzie Georgiou</td>
+                                  <td>London</td>
+                                  <td>N9</td>
+                                  <td>2</td>
+                                  <td>QTS</td>
+                                  <td>Prov - Original</td>
+                                  <td>Sec</td>
+                                  <td>Sec/FE</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td>100%</td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>203402</td>
+                                  <td></td>
+                                  <td>Chris Rogers</td>
+                                  <td>London</td>
+                                  <td>N10</td>
+                                  <td>2</td>
+                                  <td>QTS</td>
+                                  <td>Prov - Additional</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td>75%</td>
+                                  <td>B List</td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>194516</td>
+                                  <td></td>
+                                  <td>Linda Emery</td>
+                                  <td>London</td>
+                                  <td>N10</td>
+                                  <td>3.2</td>
+                                  <td>QTS</td>
+                                  <td>Online</td>
+                                  <td>Sec</td>
+                                  <td>Sec/FE</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>B List</td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>2017149</td>
+                                  <td></td>
+                                  <td>Shirnette Bates</td>
+                                  <td>Enfield</td>
+                                  <td>EN3</td>
+                                  <td>3.2</td>
+                                  <td>QTS</td>
+                                  <td>Prov - Original</td>
+                                  <td>Sec</td>
+                                  <td>Jun</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>247781</td>
+                                  <td></td>
+                                  <td>Leon Miller</td>
+                                  <td>London</td>
+                                  <td>N12</td>
+                                  <td>3.2</td>
+                                  <td>QTS</td>
+                                  <td>Prov - Original</td>
+                                  <td>Sec</td>
+                                  <td>Sec/FE</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>297001</td>
+                                  <td></td>
+                                  <td>Hannah Alberman</td>
+                                  <td>London</td>
+                                  <td>N19</td>
+                                  <td>4</td>
+                                  <td>QTS</td>
+                                  <td>Prov - Original</td>
+                                  <td>Sec</td>
+                                  <td>Sec</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>269617</td>
+                                  <td></td>
+                                  <td>Paul Wilcocks</td>
+                                  <td>London</td>
+                                  <td>N19</td>
+                                  <td>4</td>
+                                  <td>QTS</td>
+                                  <td>Online</td>
+                                  <td>Prim</td>
+                                  <td>Sec/FE</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td>!00%</td>
+                                  <td>A List</td>
+                                  <td>B List</td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td>264615</td>
+                                  <td></td>
+                                  <td>Louise Shamash</td>
+                                  <td>Barnet</td>
+                                  <td>EN5</td>
+                                  <td>4.1</td>
+                                  <td>QTS</td>
+                                  <td>Prov - None</td>
+                                  <td>Sec</td>
+                                  <td>Sec/FE</td>
+                                  <td>Y</td>
+                                  <td>Main</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>B List</td>
+                                  <td>Y</td>
+                                  <td>Y</td>
+                                  <td></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="navs-pills-justified-web"
+                          role="tabpanel"
+                        >
+                          <p
+                            class="mb-0 text-danger text-center justify-content-center"
+                          >
+                            Awaiting more information
+                          </p>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="navs-pills-justified-finance"
+                          role="tabpanel"
+                        >
+                          <table class="ms-5">
+                            <tr>
+                              <td class="pe-5">Pay Point</td>
+                              <td>Q11</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-5">Charge Point</td>
+                              <td>Q4</td>
+                            </tr>
+                          </table>
+                          <br />
+                          <table class="ms-5">
+                            <tr>
+                              <td class="pe-5"></td>
+                              <td class="pe-5"></td>
+                              <td>HP Element</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-5">Pay</td>
+                              <td class="pe-5">₤130.00</td>
+                              <td>₤14.00</td>
+                            </tr>
+                            <tr>
+                              <td class="pe-5"></td>
+                              <td class="pe-5">₤195.00</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td class="border-bottom"></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td class="pe-4"></td>
+                              <td class="pe-4">₤46.23</td>
+                              <td></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Right box-->
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 order-3 order-lg-1 mb-4">
+                  <div class="card">
+                    <div class="d-flex justify-content-between">
+                      <form class="card-body">
+                        <div class="row g-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Type</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="D2D Booking">D2D Booking</option>
+                              <option value="Permanent Placement">
+                                Permanent Placement
+                              </option>
+                              <option value="Long-term Booking">
+                                Long-term Booking
+                              </option>
+                              <option value="Agency Booking">
+                                Agency Booking
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="collapsible-fullname"
+                              >Taken From</label
+                            >
+                            <input
+                              type="text"
+                              id="collapsible-fullname"
+                              class="form-control"
+                              placeholder="Mr Mario Georgiou"
+                            />
+                          </div>
+
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Position</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="supply Teacher">
+                                Supply Teacher
+                              </option>
+                              <option value="tutor">Tutor</option>
+                              <option value="non-classroom support">
+                                Non-Classroom Support
+                              </option>
+                              <option value="classroom support">
+                                Classroom Support
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Reason*</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="sickness">Sickness</option>
+                              <option value="safeguarding concerns">
+                                Safeguarding Concerns
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-12">
+                            <label class="form-label" for="multicol-country"
+                              >Quals/ Exp/ Train</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="cache level 3">
+                                Cache Level 3
+                              </option>
+                              <option value="cache level 2">
+                                Cache Level 2
+                              </option>
+                              <option value="bachelor's degree">
+                                Bachelor's Degree
+                              </option>
+                              <option value="master's degree">
+                                Master's Degree
+                              </option>
+                              <option value="ta training">TA Training</option>
+                              <option value="pgce">PGCE</option>
+                              <option value="gsce english">GSCE</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Year</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="secondary">Secondary</option>
+                              <option value="primary">Primary</option>
+                              <option value="tertiary">Tertiary</option>
+                              <option value="eyfs">EYFS</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Assignment</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="secondary">Secondary</option>
+                              <option value="key stage 1">Key Stage 1</option>
+                              <option value="key stage 2">Key Stage 2</option>
+                              <option value="key stage 3">Key Stage 3</option>
+                              <option value="key stage 4">Key Stage 4</option>
+                              <option value="key stage 5">Key Stage 5</option>
+                              <option value="a-levels">A-Levels</option>
+                              <option value="general cover">
+                                General Cover
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Subject</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="english">English</option>
+                              <option value="german">German</option>
+                              <option value="mandarin">Mandarin</option>
+                              <option value="spanish">Spanish</option>
+                              <option value="physics">Physics</option>
+                              <option value="photography">Photography</option>
+                              <option value="biology">Biology</option>
+                              <option value="citizenship">Citizenship</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                              <label class="switch switch-square switch-lg mt-3">
+                                <div class="row">
+                                  <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6 col-6">
+                                    <span class="switch-label small">
+                                        Subj. Specialist Required
+                                    </span>
+                                  </div>
+                                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">                                    
+                                    <input type="checkbox" class="switch-input" />
+                                    <span class="switch-toggle-slider">
+                                      <span class="switch-on">
+                                        <i class="ti ti-check"></i>
+                                      </span>
+                                      <span class="switch-off">
+                                        <i class="ti ti-x"></i>
+                                      </span>
+                                    </span>`
+                                  </div>
+                                </div>
+                              </label>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Discount</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="80">80%</option>
+                              <option value="60">60%</option>
+                              <option value="50">50%</option>
+                              <option value="40">40%</option>
+                              <option value="30">30%</option>
+                              <option value="20">20%</option>
+                              <option value="10">10%</option>
+                              <option value="5">5%</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Employment</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="long-term">Long-Term</option>
+                              <option value="contract">Contract</option>
+                              <option value="permanent placement">
+                                Permanent Placement
+                              </option>
+                              <option value="d2d">D2D</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label
+                              class="m-0 me-2 form-label"
+                              for="multicol-country mb-4"
+                            ></label>
+                            <div class="card-title-elements">
+                              <label class="switch switch-square switch-lg">
+                                <span class="switch-label"
+                                  ><small>H & S Risks</small></span
+                                >
+                                <input type="checkbox" class="switch-input" />
+                                <span class="switch-toggle-slider">
+                                  <span class="switch-on">
+                                    <i class="ti ti-check"></i>
+                                  </span>
+                                  <span class="switch-off">
+                                    <i class="ti ti-x"></i>
+                                  </span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label
+                              class="m-0 me-2 form-label"
+                              for="multicol-country mb-4"
+                            ></label>
+                            <div class="card-title-elements">
+                              <label class="switch switch-square switch-lg">
+                                <span class="switch-label"
+                                  ><small>Work Set</small></span
+                                >
+                                <input type="checkbox" class="switch-input" />
+                                <span class="switch-toggle-slider">
+                                  <span class="switch-on">
+                                    <i class="ti ti-check"></i>
+                                  </span>
+                                  <span class="switch-off">
+                                    <i class="ti ti-x"></i>
+                                  </span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Charge as</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="daily pay">Daily Pay</option>
+                              <option value="wages percentage(fixed)">
+                                Wages Percentage (Fixed)
+                              </option>
+                              <option value="salary percentage(fixed)">
+                                Salary Percentage (Fixed)
+                              </option>
+                              <option value="salary percentage(amendable)">
+                                Salary Percentage (Amendable)
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Booking mode</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="referral">Referral</option>
+                              <option value="agency worker">
+                                Agency Worker
+                              </option>
+                              <option value="direct booking">
+                                Direct Booking
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="multicol-country"
+                              >Framework</label
+                            >
+                            <select
+                              id="multicol-country"
+                              class="select2 form-select"
+                              data-allow-clear="true"
+                            >
+                              <option value="direct sale">Direct Sale</option>
+                              <option value="indirect sale">
+                                Indirect Sale
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="collapsible-fullname"
+                              >Booking Ref.</label
+                            >
+                            <input
+                              type="text"
+                              id="collapsible-fullname"
+                              class="form-control"
+                              placeholder=""
+                            />
+                          </div>
+
+                          <div class="col-md-6">
+                            <label
+                              class="m-0 me-2 form-label"
+                              for="multicol-country mb-4"
+                            ></label>
+                            <div class="card-title-elements">
+                              <label class="switch switch-square switch-lg">
+                                <span class="switch-label">Out of hours</span>
+                                <input type="checkbox" class="switch-input" />
+                                <span class="switch-toggle-slider">
+                                  <span class="switch-on">
+                                    <i class="ti ti-check"></i>
+                                  </span>
+                                  <span class="switch-off">
+                                    <i class="ti ti-x"></i>
+                                  </span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                              <button
+                                type="button"
+                                class="btn rounded-pill btn-outline-warning"
+                              >
+                                <span class="ti-xs ti ti-eraser me-1"></span
+                                >Delete
+                              </button>
+                            </div>
+                          </div>
+
+                          <!--note to read-->
+                          <div class="col-md-12">
+                            <hr class="my-2" />
+                            <div class="row p-0">
+                              <div
+                                class="col-xl-5 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4"
+                              >
+                                <label
+                                  class="form-label"
+                                  for="collapsible-address"
+                                  >Notes</label
+                                >
+                                <textarea
+                                  name="collapsible-address"
+                                  class="form-control"
+                                  id="collapsible-address"
+                                  rows="14"
+                                  placeholder="South Point House, 321 Chase Road"
+                                ></textarea>
+                              </div>
+                              <div
+                                class="col-xl-7 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4"
+                              >
+                                <div class="demo-inline-spacing mb-4">
+                                  <button type="button" class="btn btn-warning">
+                                    <span class="ti-xs ti ti-plus me-1"></span
+                                    >New Asn</button
+                                  ><button
+                                    type="button"
+                                    class="btn btn-warning"
+                                  >
+                                    <span class="ti-xs ti ti-copy me-1"></span
+                                    >Copy Me</button
+                                  ><button
+                                    type="button"
+                                    class="btn btn-warning"
+                                  >
+                                    Hub Spot
+                                  </button>
+                                  <button type="button" class="btn btn-warning">
+                                    List Days</button
+                                  ><button
+                                    type="button"
+                                    class="btn btn-warning"
+                                  >
+                                    Continuity</button
+                                  ><button
+                                    type="button"
+                                    class="btn btn-warning"
+                                  >
+                                    Price Profile</button
+                                  ><button
+                                    type="button"
+                                    class="btn btn-warning"
+                                  >
+                                    No Go Tch</button
+                                  ><button
+                                    type="button"
+                                    class="btn btn-warning"
+                                  >
+                                    Interviews</button
+                                  ><button
+                                    type="button"
+                                    class="btn rounded-pill btn-outline-warning"
+                                  >
+                                    Reset
+                                  </button>
+                                </div>
+                                <div class="col-md-12">
+                                  <label
+                                    class="form-label"
+                                    for="multicol-country"
+                                    >Mode</label
+                                  >
+                                  <select
+                                    id="multicol-country"
+                                    class="select2 form-select"
+                                    data-allow-clear="true"
+                                  >
+                                    <option value="locked">Locked</option>
+                                    <option value="unlocked">Unlocked</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="">
+                      <div class="app-calendar-wrapper">
+                        <div class="row g-0">
+                          <!-- Calendar & Modal -->
+                          <div class="col app-calendar-content">
+                            <div class="card shadow-none border-0">
+                              <div class="card-body pb-0">
+                                <!-- FullCalendar -->
+                                <div id="calendar"></div>
+                              </div>
+                            </div>
+
+                            <!-- FullCalendar Offcanvas -->
+                            <div
+                              class="offcanvas offcanvas-end event-sidebar"
+                              tabindex="-1"
+                              id="addEventSidebar"
+                              aria-labelledby="addEventSidebarLabel"
+                            ></div>
+                          </div>
+                          <!-- /Calendar & Modal -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--/ Layout Demo -->
+            </div>
+
+            <!-- Content -->
+
+            <!-- / Content -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+              <!-- Content -->
+
+              <!-- / Content -->
+
+              <!-- Footer -->
+              <footer class="content-footer footer bg-footer-theme">
+                <div class="container-xxl">
+                  <div
+                    class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column"
+                  >
+                    <div>
+                      ©
+                      <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                      , made with ❤️ by
+                      <a
+                        href="https://JSBC Labs.com"
+                        target="_blank"
+                        class="fw-medium"
+                        >JSBC Labs</a
+                      >
+                    </div>
+                    <div class="d-none d-lg-inline-block">
+                      <a
+                        href="https://themeforest.net/licenses/standard"
+                        class="footer-link me-4"
+                        target="_blank"
+                        >License</a
+                      >
+                      <a
+                        href="https://1.envato.market/JSBC Labs_portfolio"
+                        target="_blank"
+                        class="footer-link me-4"
+                        >More Themes</a
+                      >
+
+                      <a
+                        href="https://demos.JSBC Labs.com/Step Teachers-html-admin-template/documentation/"
+                        target="_blank"
+                        class="footer-link me-4"
+                        >Documentation</a
+                      >
+
+                      <a
+                        href="https://JSBC Labs.ticksy.com/"
+                        target="_blank"
+                        class="footer-link d-none d-sm-inline-block"
+                        >Support</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <!-- / Footer -->
+
+              <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+          </div>
+          <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
+      </div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/fullcalendar/fullcalendar.js"></script>
+    <script src="assets/vendor/libs/@form-validation/umd/bundle/popular.min.js"></script>
+    <script src="assets/vendor/libs/@form-validation/umd/plugin-bootstrap5/index.min.js"></script>
+    <script src="assets/vendor/libs/@form-validation/umd/plugin-auto-focus/index.min.js"></script>
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="assets/vendor/libs/moment/moment.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/app-calendar-events.js"></script>
+    <script src="assets/js/app-calendar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+.lay-table th {
+  border: 2px #c8c8c8 solid;
+  color: #000;
+}
+
+.lay-table td {
+  border-right: 1px #c8c8c8 solid;
+  border-left: 1px #c8c8c8 solid;
+}

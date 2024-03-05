@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Dashboard | Step Teachers</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/stepfavicon.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-text demo menu-text fw-bold">
+                <img
+                  height="42"
+                  src="assets/img/branding/step-teachers-logo (1).png"
+                />
+              </span>
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto"
+            >
+              <i
+                class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"
+              ></i>
+              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!--Menu -->
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text" data-i18n="Menu">Menu</span>
+            </li>
+            <li class="menu-item active">
+              <a href="Dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-dashboard"></i>
+                <div data-i18n="Dashboard">Dashboard</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="pending.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                <div data-i18n="Pending">Pending</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="completed.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-checkbox"></i>
+                <div data-i18n="Completed">Completed</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="pullout.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
+                <div data-i18n="Pullout">Pullout</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="Candidates.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-users"></i>
+                <div data-i18n="Candidates">Candidates</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="layouts-school-screen.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-layout-grid"></i>
+                <div data-i18n="School Screen">School Screen</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a
+                    class="nav-item nav-link search-toggler d-flex align-items-center px-0"
+                    href="javascript:void(0);"
+                  >
+                    <i class="ti ti-search ti-md me-2"></i>
+                    <span class="d-none d-md-inline-block text-muted"
+                      >Search (Ctrl+/)</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Language -->
+
+                <!-- Style Switcher -->
+                <li
+                  class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="ti ti-md"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="light"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-sun me-2"></i>Light</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="dark"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-moon me-2"></i>Dark</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="system"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-device-desktop me-2"></i>System</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- / Style Switcher-->
+
+                <!-- Quick links  -->
+
+                <!-- Notification -->
+                <li
+                  class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <i class="ti ti-bell ti-md"></i>
+                    <span
+                      class="badge bg-danger rounded-pill badge-notifications"
+                      >5</span
+                    >
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div
+                        class="dropdown-header d-flex align-items-center py-3"
+                      >
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li
+                      class="dropdown-notifications-list scrollable-container"
+                    >
+                      <ul class="list-group list-group-flush">
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Congratulations Lettie 🎉</h6>
+                              <p class="mb-0">Ten years teaching</p>
+                              <small class="text-muted">1h ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-danger"
+                                  >CF</span
+                                >
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Charles Franklin</h6>
+                              <p class="mb-0">Accepted the assignment</p>
+                              <small class="text-muted">12hr ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-success"
+                                  ><i class="ti ti-phone-calling"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Whoo! You have new contact</h6>
+                              <p class="mb-0">Mr Brian Belson, Head of ICT</p>
+                              <small class="text-muted">1 day ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/9.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Assignment has been sent 🚀</h6>
+                              <p class="mb-0">
+                                Waiting on approval/acceptance.
+                              </p>
+                              <small class="text-muted">2 days ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-success"
+                                  ><i class="ti ti-chart-pie"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Monthly report is generated</h6>
+                              <p class="mb-0">
+                                Feb monthly financial report is generated
+                              </p>
+                              <small class="text-muted">3 days ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-warning"
+                                  ><i class="ti ti-alert-triangle"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">CPU is running high</h6>
+                              <p class="mb-0">
+                                CPU Utilization Percent is currently at 88.63%,
+                              </p>
+                              <small class="text-muted">5 days ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center"
+                      >
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="assets/img/avatars/1.png"
+                        alt
+                        class="h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-account.html"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="assets/img/avatars/1.png"
+                                alt
+                                class="h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">Jay Slinger</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-profile-user.html">
+                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-account.html"
+                      >
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-billing.html"
+                      >
+                        <span class="d-flex align-items-center align-middle">
+                          <i
+                            class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"
+                          ></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span
+                            class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20"
+                            >2</span
+                          >
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-faq.html">
+                        <i class="ti ti-help me-2 ti-sm"></i>
+                        <span class="align-middle">FAQ</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-pricing.html">
+                        <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                        <span class="align-middle">Pricing</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="auth-login-cover.html"
+                        target="_blank"
+                      >
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper d-none">
+              <input
+                type="text"
+                class="form-control search-input container-xxl border-0"
+                placeholder="Search..."
+                aria-label="Search..."
+              />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </nav>
+
+          <!-- / Actual content container -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+
+            <!-- THis must go on top, for the mockups -->
+            <div class="col-xl-12 mb-4">
+              <div class="card">
+                <div class="row FKstats">
+                  <div class="col-xxl-2 col-xl-4 col-md-4 col-sm-6">
+                    <div class="card m-2 shadow bg-body rounded">
+                      <div class="card-body p-3">
+                        <h6 class="">Total Bookings</h6>
+                        <span class="small text-muted">This year</span>
+                        <!-- Img or something -->
+                        <img src="assets/img/dashboard/green line.png" alt="The green Line" class="card-img d-flex justify-content-center">
+                        <h4 class="float-start mb-2">13</h4>
+                        <span class="small text-danger mt-1 mb-2 float-end">-16.2%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-4 col-md-4 col-sm-6">
+                    <div class="card m-2 shadow bg-body rounded">
+                      <div class="card-body p-3">
+                        <h6 class="">Open Long-term Bookings</h6>
+                        <span class="small text-muted">This Month</span>
+                        <!-- Another Ing or something -->
+                        <img src="assets/img/dashboard/line verticals.jpg" alt="Line verticals" class="card-img d-flex justify-content-center">
+                        <h4 class="float-start mb-2">7</h4>
+                        <p class="small text-success mt-1 mb-2 float-end">+12.6%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-4 col-md-4 col-sm-6">
+                    <div class="card m-2 shadow bg-body rounded">
+                      <div class="card-body p-3">
+                        <!-- Img/Icon/Something -->
+                        
+                        <i class="menu-icon tf-icons ti ti-rotate float-end" style="color: rgb(255, 111, 0); font-size: 2.5rem;"></i>
+                        <h6>Pending Bookings</h6>
+                        <span class="small text-muted">This week</span>
+                        <h5 class="mb-4">2</h5>
+                        <button class="btn btn-light btn-sm mb-4">-12.2%</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-2 col-xl-4 col-md-4 col-sm-6">
+                    <div class="card m-2 shadow bg-body rounded">
+                      <div class="card-body p-3">
+                        <!-- Img/Icon/Something -->
+                        <i class="menu-icon tf-icons ti ti-lock float-end" style="color: rgb(44, 43, 42); font-size: 2.5rem;"></i>
+
+                        <h6>Pull Outs</h6>
+                        <span class="small text-muted">This week</span>
+                        <h5 class="mb-4">1</h5>
+                        <button class="btn btn-light btn-sm mb-4">+25.2%</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-8 col-md-8 col-sm-12">
+                    <div class="card m-2 shadow bg-body rounded">
+                      <div class="card-body p-3">
+                        <img src="assets/img/dashboard/week-bar-graph.png" alt="" class="float-end WKbar">
+                        <h6 class="">Sales Growth</h6>
+                        <span class="small text-muted">Weekly report</span>
+                        <!-- Img? but on the right side... -->
+                        <h4>5</h4>
+                        <button class="btn btn-success btn-sm">+15.2%</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex container-fluid justify-content-start mb-4">
+              <div><button class="btn btn-label-primary lgtPB">Assignment</button></div>
+              <div><button class="btn btn-label-primary lgtPB">AWS Clocks</button></div>
+              <div><button class="btn btn-label-primary lgtPB">Days to comfirm</button></div>
+              <div><button class="btn btn-label-primary lgtPB">Pay Scales</button></div>
+              <div><button class="btn btn-label-primary lgtPB">Active Candidates</button></div>
+            </div>
+
+            <div class="">
+              <!-- DashBoard Table -->
+              <div class="mb-4">
+                <div class="card">
+                  <div class="justify-content-between">
+                    <div class="table-responsive text-nowrap m-4">
+                      <h3>List Pending D2D and T2P Assignments and Leads</h3>
+                      <table class="table lay-table" id="lay-table">
+                        <thead>
+                          <tr>
+                            <th colspan="2"></th>
+                            <th colspan="3" class="text-center">Temp-to-Perm</th>
+                            <th colspan="3" class="text-center">Day-to-Day</th>
+                            <th colspan="3" class="text-center">Lead</th>
+                          </tr>
+                          <tr>
+                            <th colspan="2" class="fw-bold">Selected Asn Starts</th>
+                            <th class="text-center">Asn</th>
+                            <th class="text-center">Days</th>
+                            <th class="text-center">Open</th>
+                            <th class="text-center">Asn</th>
+                            <th class="text-center">Days</th>
+                            <th class="text-center">Open</th>
+                            <th class="text-center">Asn</th>
+                            <th class="text-center">Days</th>
+                            <th class="text-center">Open</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="fw-bold">Earlier than today</td>
+                            <td></td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">180</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">191</td>
+                            <td class="text-center">1125</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Today</td>
+                            <td>Mon 5 Feb 2024 <span class="ps-2">only</span></td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">465</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">18</td>
+                            <td class="text-center">245</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Next School Day</td>
+                            <td class="">Tue 6 Feb 2024 <span class="ps-2">only</span></td>
+                            <td class="text-center">5</td>
+                            <td class="text-center">167</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">30</td>
+                            <td class="text-center">90</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">2</td>
+                            <td class="text-center">2</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Rest of week</td>
+                            <td class="">Wed 7 Feb 2024 <span class="ps-2">to</span><span class="ps-3">Fri 9 Feb 2024</span></td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">31</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">17</td>
+                            <td class="text-center">119.5</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">0</td>
+                            <td class="text-center">0</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Following Week</td>
+                            <td class="">Mon 12 Feb 2024 <span class="ps-2">to</span><span class="ps-3">Fri 16 Feb 2024</span></td>
+                            <td class="text-center">54</td>
+                            <td class="text-center">1042</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">21</td>
+                            <td class="text-center">165</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">40</td>
+                            <td class="text-center">102</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Future</td>
+                            <td class="">Mon 19 Feb 2024 <span class="ps-2">onwards</span></td>
+                            <td class="text-center">140</td>
+                            <td class="text-center">3953</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">116</td>
+                            <td class="text-center">426</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">53</td>
+                            <td class="text-center">695.5</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold" colspan="2">Part Confirmed</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">337</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">23</td>
+                            <td class="text-center">112.5</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td colspan="3"></td>
+                          </tr>
+                          <tr>
+                            <th class="fw-bold" colspan="2">All Region Asn Starts</th>
+                            <th colspan="9"></th>
+                            <!-- <td colspan="3"></td> -->
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Today</td>
+                            <td class="">Mon 5 Feb 2024 <span class="ps-2">only</span> </td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">465</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td colspan="3"></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">Next School Day</td>
+                            <td class="">Tue 6 Feb 2024 <span class="ps-2">only</span></td>
+                            <td class="text-center">5</td>
+                            <td class="text-center">167</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td class="text-center">30</td>
+                            <td class="text-center">90</td>
+                            <td class="text-center"><button class="btn btn-outline-secondary"></button></td>
+                            <td colspan="3"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="d-flex container-fluid justify-content-start mb-4">
+                      <div><button class="btn btn-primary drkPB">All day-to-day assignments</button></div>
+                      <div><button class="btn btn-primary drkPB">All T2P assignments</button></div>
+                      <div><button class="btn btn-primary drkPB">All Temporary assignments</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ DashBoard table -->
+            </div>
+          </div>
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <!-- Layout Demo -->
+
+              <!--/ Layout Demo -->
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column"
+                >
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    , made with ❤️ by
+                    <a
+                      href="https://JSBC Labs.com"
+                      target="_blank"
+                      class="fw-medium"
+                      >JSBC Labs</a
+                    >
+                  </div>
+                  <div class="d-none d-lg-inline-block">
+                    <a
+                      href="https://themeforest.net/licenses/standard"
+                      class="footer-link me-4"
+                      target="_blank"
+                      >License</a
+                    >
+                    <a
+                      href="https://1.envato.market/JSBC Labs_portfolio"
+                      target="_blank"
+                      class="footer-link me-4"
+                      >More Themes</a
+                    >
+
+                    <a
+                      href="https://demos.JSBC Labs.com/Step Teachers-html-admin-template/documentation/"
+                      target="_blank"
+                      class="footer-link me-4"
+                      >Documentation</a
+                    >
+
+                    <a
+                      href="https://JSBC Labs.ticksy.com/"
+                      target="_blank"
+                      class="footer-link d-none d-sm-inline-block"
+                      >Support</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+  </body>
+</html>

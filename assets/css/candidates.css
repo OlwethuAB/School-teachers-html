@@ -1,0 +1,171 @@
+.fc-left h2 {
+  font-size: 18px;
+}
+
+.fc-icon, body .fc {
+  font-size: 12px;
+}
+
+.fc-scroller.fc-day-grid-container {
+  overflow: unset !important;
+}
+
+@media screen and (min-width: 1400px){
+  div.fc-view-harness {
+    height: 450px !important;
+  }
+  
+  tbody.fc-body {
+    height: 300px !important;
+  }
+  
+  #cald .SMQ, .SMQ .app-calendar-wrapper {
+    height: 450px;
+  }
+  #cald {
+    height: 400px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  div.fc-view-harness, .fc-view-container, div.fc-view.fc-month-view.fc-basic.view {
+    height: 450px !important;
+  }
+
+  tbody.fc-body {
+    height: 300px !important;
+  }
+
+  #cald .SMQ, .SMQ .app-calendar-wrapper {
+    height: 450px;
+  }
+  #cald {
+    height: 400px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #cald {
+    height: 450px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #cald {
+    height: 400px;
+    padding: 0;
+  }
+}
+
+
+
+/* @media screen and (max-width: 1300px) {
+
+  #cald .SMQ {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  #cald .SMQ {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1100px) {
+
+  #cald .SMQ {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+
+  #cald .SMQ {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  #cald .SMQ {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #cald {
+    height: 550px !important;
+  }
+} */
+
+.nav .nav-item, .nav .nav-link, .tab-pane, .tab-pane .card-body {
+  outline: none !important;
+  padding: 12px 4px;
+}
+
+.teachers-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teachers-buttons{
+  text-align: end;
+}
+
+.cand-table {
+    height: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 2px #c8c8c8 solid;
+  }
+  
+  /* width */
+  .cand-table::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+  
+  /* Track */
+  .cand-table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .cand-table::-webkit-scrollbar-thumb {
+    background: rgb(103, 103, 231);
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  .cand-table::-webkit-scrollbar-thumb:hover {
+    background: rgb(103, 103, 231);
+  }
+  
+  /* .short-table tr{
+      overflow-x: scroll;
+  } */
+  
+  .cand-table th {
+    border: 2px #c8c8c8 solid;
+    padding-left: 5px;
+    padding-right: 15px;
+    color: #000;
+  }
+  
+  .cand-table td {
+    border-right: 1px #c8c8c8 solid;
+    border-left: 1px #c8c8c8 solid;
+    border-bottom: 1px #f0eeee solid;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  
+  .cand-table tr:hover {
+    border: 1px #c8c8c8 solid;
+    background: rgb(132, 169, 249);
+  }

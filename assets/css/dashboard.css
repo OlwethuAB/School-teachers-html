@@ -1,0 +1,80 @@
+#lay-table th {
+  border: 2px #c8c8c8 solid;
+  color: #000;
+}
+
+#lay-table td {
+  border-right: 1px #c8c8c8 solid;
+  border-left: 1px #c8c8c8 solid;
+  border-bottom: 1px #c8c8c8 solid;
+}
+
+.card-img {
+  width: 80%; 
+  height: 65px; 
+  /* margin: 0;  */
+  /* padding-right: 10px; */
+}
+
+@media screen and (max-width: 1399px) {
+  .WKbar {
+    width: 350px;
+    height: 160px;
+  }
+  .FKstats .card {
+    margin: 1rem !important;
+  }
+}
+@media screen and (max-width: 530px) {
+  .WKbar {
+    width: 250px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .WKbar {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+      .FKstats .card{
+          height: 194px;
+      }
+      .WKbar{
+        width: 70%;
+        height: 70%;
+      }
+}
+
+.lgtPB {
+  margin-right: 1rem;
+}
+.drkPB {
+  margin-right: 1.5rem;
+}
+
+
+@media only screen and (max-width: 620px) {
+      .lgtPB{
+        font-size: 10px !important;
+        padding: 0.5rem !important;
+      }
+      .drkPB{
+        font-size: 12px !important;
+        padding: 0.5rem !important;
+      }
+}
+@media only screen and (max-width: 456px) {
+      .lgtPB{
+        font-size: 8px !important;
+        padding: 0.25rem !important;
+      }
+      .drkPB{
+        font-size: 10px !important;
+        padding: 0.25rem !important;
+
+      }
+}
+

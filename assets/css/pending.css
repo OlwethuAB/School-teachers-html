@@ -1,0 +1,97 @@
+.pending-table{
+    border: 2px rgb(232, 229, 229) solid;
+  }
+  .pending-table th{
+    border: 1px rgb(232, 229, 229) solid;
+  }
+  .pending-table td{
+    border-left: 1px rgb(232, 229, 229) solid;
+  }
+  
+  .pend{
+    border-radius: 4px !important;
+  }
+  
+  .candi-border {
+    border-top: 2px #7b7b7b solid;
+    border-left: 2px #7b7b7b solid;
+    border-bottom: 1px #dfdfdf solid;
+    border-right: 1px #dfdfdf solid;
+    color: #000;
+  }
+  
+  .rando {
+    width: 180px;
+    height: 200px;
+    justify-content: right;
+  }
+  
+  
+  .short-table{
+    height: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 2px #C8C8C8 solid;
+    border-radius: 4px;
+}
+
+/* width */
+.short-table::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+/* Track */
+.short-table::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+.short-table::-webkit-scrollbar-thumb {
+    background: #ff9f43; 
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+.short-table::-webkit-scrollbar-thumb:hover {
+    background: #ff9f43; 
+}
+/* Handle on hover */
+.short-table::-webkit-scrollbar-thumb:active {
+    background: #ff9f43; 
+}
+
+/* .short-table tr{
+    overflow-x: scroll;
+} */
+
+.short-table th{
+    border: 2px #C8C8C8 solid;
+    padding-left: 5px;
+    padding-right: 15px;
+    color: #000;
+  }
+  
+  .short-table td{
+    border-right: 1px #C8C8C8 solid;
+    border-left: 1px #C8C8C8 solid;
+    border-bottom: 1px #C8C8C8 solid;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.short-table tr:hover{
+    border: 1px #C8C8C8 solid;
+    background: #fbb676;
+}
+
+.log-btn{
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.sm-btn{
+    width: 90px;
+    border-radius: 4px;
+}

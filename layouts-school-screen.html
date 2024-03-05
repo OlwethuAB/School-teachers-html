@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>School Screen | Step Teachers - Bootstrap Admin Template</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/stepfavicon.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/css/rtl/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/school-screen.css" />
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+        <div class="app-brand demo">
+          <a href="index.html" class="app-brand-link">
+            <span class="app-brand-text demo menu-text fw-bold">
+              <img height="42" src="assets/img/branding/step-teachers-logo (1).png" />
+            </span>
+          </a>
+          <a href="javascript:void(0);"
+            class="layout-menu-toggle menu-link text-large ms-auto">
+            <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+            <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+          </a>
+        </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">      
+            <!--Menu -->
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text" data-i18n="Menu">Menu</span>
+            </li>
+            <li class="menu-item">
+              <a href="Dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-dashboard"></i>
+                <div data-i18n="Dashboard">Dashboard</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="pending.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                <div data-i18n="Pending">Pending</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="completed.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-checkbox"></i>
+                <div data-i18n="Completed">Completed</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="pullout.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
+                <div data-i18n="Pullout">Pullout</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="Candidates.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-users"></i>
+                <div data-i18n="Candidates">Candidates</div>
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="layouts-school-screen.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-layout-grid"></i>
+                <div data-i18n="School Screen">School Screen</div>
+              </a>
+            </li>
+            </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout -->
+        <div class="layout-page">
+          <!-- Navbar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a
+                    class="nav-item nav-link search-toggler d-flex align-items-center px-0"
+                    href="javascript:void(0);"
+                  >
+                    <i class="ti ti-search ti-md me-2"></i>
+                    <span class="d-none d-md-inline-block text-muted"
+                      >Search (Ctrl+/)</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Language -->
+
+                <!-- Style Switcher -->
+                <li
+                  class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="ti ti-md"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="light"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-sun me-2"></i>Light</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="dark"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-moon me-2"></i>Dark</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="javascript:void(0);"
+                        data-theme="system"
+                      >
+                        <span class="align-middle"
+                          ><i class="ti ti-device-desktop me-2"></i>System</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- / Style Switcher-->
+
+                <!-- Quick links  -->
+
+                <!-- Notification -->
+                <li
+                  class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <i class="ti ti-bell ti-md"></i>
+                    <span
+                      class="badge bg-danger rounded-pill badge-notifications"
+                      >5</span
+                    >
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div
+                        class="dropdown-header d-flex align-items-center py-3"
+                      >
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li
+                      class="dropdown-notifications-list scrollable-container"
+                    >
+                      <ul class="list-group list-group-flush">
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Congratulations Lettie 🎉</h6>
+                              <p class="mb-0">
+                                Ten years teaching
+                              </p>
+                              <small class="text-muted">1h ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-danger"
+                                  >CF</span
+                                >
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Charles Franklin</h6>
+                              <p class="mb-0">Accepted the assignment</p>
+                              <small class="text-muted">12hr ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-success"
+                                  ><i class="ti ti-phone-calling"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Whoo! You have new contact</h6>
+                              <p class="mb-0">
+                                Mr Brian Belson, Head of ICT
+                              </p>
+                              <small class="text-muted">1 day ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/9.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">
+                                Assignment has been sent 🚀
+                              </h6>
+                              <p class="mb-0">
+                                Waiting on approval/acceptance.
+                              </p>
+                              <small class="text-muted">2 days ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-success"
+                                  ><i class="ti ti-chart-pie"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Monthly report is generated</h6>
+                              <p class="mb-0">
+                                Feb monthly financial report is generated
+                              </p>
+                              <small class="text-muted">3 days ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span
+                                  class="avatar-initial rounded-circle bg-label-warning"
+                                  ><i class="ti ti-alert-triangle"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">CPU is running high</h6>
+                              <p class="mb-0">
+                                CPU Utilization Percent is currently at 88.63%,
+                              </p>
+                              <small class="text-muted">5 days ago</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center"
+                      >
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="assets/img/avatars/1.png"
+                        alt
+                        class="h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-account.html"
+                      >
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="assets/img/avatars/1.png"
+                                alt
+                                class="h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">Jay Slinger</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-profile-user.html">
+                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-account.html"
+                      >
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="pages-account-settings-billing.html"
+                      >
+                        <span class="d-flex align-items-center align-middle">
+                          <i
+                            class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"
+                          ></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span
+                            class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20"
+                            >2</span
+                          >
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-faq.html">
+                        <i class="ti ti-help me-2 ti-sm"></i>
+                        <span class="align-middle">FAQ</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-pricing.html">
+                        <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                        <span class="align-middle">Pricing</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="auth-login-cover.html"
+                        target="_blank"
+                      >
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper d-none">
+              <input
+                type="text"
+                class="form-control search-input container-xxl border-0"
+                placeholder="Search..."
+                aria-label="Search..."
+              />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </nav>
+
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <h4 class="py-3 mb-4">
+                  <span class="text-muted fw-light">School /</span> Step Teachers
+                  (627324)
+                </h4>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div>
+                  <ul class="list-unstyled mb-2">
+                    <li class="mb-3 pb-1">
+                      <div class="d-flex me-0">
+                        <div
+                          class="d-flex justify-content-end w-100 flex-wrap gap-2"
+                        >
+                          <div class="d-flex align-items-center">
+                            <div class="col-xl-12 mb- col-lg-7 col-12 me-4">
+                              <div class="ms-1">
+                                Area 301 - Adam Georgiou's School
+                              </div>
+                              <div class="card-title header-elements">
+                                <div class="card-title-elements me-4">
+                                  <h5 class="m-1 me-2">Include all site</h5>
+                                  <label
+                                    class="switch switch-primary switch-sm me-3"
+                                  >
+                                    <input type="checkbox" class="switch-input" />
+                                    <span class="switch-toggle-slider">
+                                      <span class="switch-on"></span>
+                                      <span class="switch-off"></span>
+                                    </span>
+                                  </label>
+                                </div>
+                                <div class="card-title-elements">
+                                  <select class="form-select form-select-sm w-auto">
+                                    <option selected="main site">Main Site</option>
+                                    <option selected="childrens centre">
+                                      Children's centre
+                                    </option>
+                                    <option selected="primary site">
+                                      Primary Site
+                                    </option>
+                                    <option selected="secondary site">
+                                      Secondary Site
+                                    </option>
+                                    <option selected="Other?">Other ?</option>
+                                  </select>
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-primary"
+                                  >
+                                    Go
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <!-- Source Visit -->
+
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="card mb-4">
+                <div class="table-responsive">
+                  <table class="table lay-table">
+                    <tbody class="table-border-bottom-0 text-nowrap">
+                      <tr>
+                        <th>
+                          <span class="fw-medium"><small>General</small></span>
+                        </th>
+                        <th><small>Number</small></th>
+                        <th><small>Ext</small></th>
+
+                        <th><small>Site</small></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-medium"
+                            ><small>Telephone</small></span
+                          >
+                        </td>
+                        <td><small>020 88826246</small></td>
+                        <td>-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-medium"><small></small></span>
+                        </td>
+                        <td><small></small></td>
+                        <td>-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-medium"><small></small></span>
+                        </td>
+                        <td><small></small></td>
+                        <td>-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-medium"><small></small></span>
+                        </td>
+                        <td><small></small></td>
+                        <td>-</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> 
+              </div>
+              <!--/ Source Visit -->
+
+              <!-- Projects table -->
+              <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 order-2 order-lg-1 mb-4">
+                <div class="card">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table lay-table">
+                        <tbody>
+                          <tr>
+                            <th>
+                              <span class="fw-medium"
+                                ><small>Contact</small></span
+                              >
+                            </th>
+                            <th><small>Position *(Timesheets)</small></th>
+                            <th><small>CoS</small></th>
+                            <th><small>N</small></th>
+                            <th><small>Site</small></th>
+                            <th><small>Number</small></th>
+                            <th><small>Ext</small></th>
+                            <th><small>Type</small></th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Mr Mario Georgiou</small></span
+                              >
+                            </td>
+                            <td><small>Chair of Governors</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small></small></td>
+                            <td><small>S</small></td>
+                            <td><small></small></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Ms Joanie Smith</small></span
+                              >
+                            </td>
+                            <td><small>Finance Officer</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small>01236 98569</small></td>
+                            <td><small></small></td>
+                            <td><small>Finance</small></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Mr Ben Pearson</small></span
+                              >
+                            </td>
+                            <td><small>Head of ICT</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small>07967 059703</small></td>
+                            <td><small>H</small></td>
+                            <td><small>Cos Mobile</small></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-medium"
+                                ><small>Mr Brian Belson</small></span
+                              >
+                            </td>
+                            <td><small>Head of ICT</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><small></small></td>
+                            <td><small>H</small></td>
+                            <td><small></small></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>
+              <!--/ Projects table -->
+            </div>
+
+            <!-- Navbar pills -->
+            <div class="col-xl-12">
+              <div class="nav-align-top mb-4">
+                <ul class="nav nav-pills mb-3" role="tablist">
+                  <li class="nav-item">
+                    <button
+                      type="button"
+                      class="nav-link"
+                      role="tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#navs-pills-justified-summary"
+                      aria-controls="navs-pills-justified-summary"
+                      aria-selected="true">
+                      <i class="ti ti-user-check ti-xs me-1"></i> Summary                    
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      type="button"
+                      class="nav-link active"
+                      role="tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#navs-pills-justified-assignment"
+                      aria-controls="navs-pills-justified-assignment"
+                      aria-selected="true"
+                    >
+                      <i class="ti ti-layout-grid ti-xs me-1"></i> Assignment
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      type="button"
+                      class="nav-link"
+                      role="tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#navs-pills-justified-sales"
+                      aria-controls="navs-pills-justified-sales"
+                      aria-selected="false"
+                    >
+                      <i class="ti ti-building ti-xs me-1"></i> Sales
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      type="button"
+                      class="nav-link"
+                      role="tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#navs-pills-justified-financials"
+                      aria-controls="navs-pills-justified-financials"
+                      aria-selected="false"
+                    >
+                      <i class="tf-icons ti ti-moneybag ti-xs me-1"></i
+                      >Financials
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div
+                  class="tab-pane fade"
+                  id="navs-pills-justified-summary"
+                  role="tabpanel"
+                >
+                  <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-11 ms-lg-3 ms-sm-1">
+                        <table>
+                          <tr><th><strong>De Bohun Primary School</strong></th></tr>
+                          <tr></tr>
+                          <tr><td><p class="ms-3 mb-0 mt-0">Green Road</p></td></tr>
+                          <tr><td><p class="ms-3 mb-0 mt-0">SouthGate</p></td></tr>
+                          <tr><td><p class="ms-3 mb-0 mt-0">LONDON</p></td></tr>
+                          <tr><td><p class="ms-3 mb-0 mt-0">N14 4AD</p></td></tr>
+                        </table>
+                        <hr class="ms-5">
+                        <table>
+                          <tr>
+                            <td><strong>School type</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">Primary School (4 - 11)</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>No on roll</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">441</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>LEA</strong></td>
+                            <td style="color: rgb(28, 141, 239);"><p class="ms-3 mb-0 mt-0">Enfield</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Day</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">08:45 - 15:25</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Lunch</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0"></p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Teachers expected at</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">08:30</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Nearest tube/train</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">Tube - Oakwood,Train - Oakleigh Park</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Typical class size</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0"></p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Classroom control</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">Average</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>General email address</strong></td>
+                            <td><p class="ms-3 mb-0 mt-0">office@debshun.enfeild.sch.uk</p></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <div class="col-lg-4 col-md-7 col-sm-7 ms-lg-5 ms-md-3 ms-sm-1 mt-md-4 mt-sm-4 mb-sm-4">
+                        <table>
+                          <tr>
+                            <td><strong> Contact </strong></td>
+                          </tr>
+                          <tr>
+                            <td><p class="mb-0 mt-0"><strong>This school has been called 29 times this period</strong></p></td>
+                          </tr>
+                          <tr>
+                            <td><br></td>
+                          </tr>
+                          <tr>
+                            <td><p class="mb-0 mt-0">This school was called on 12/09/2022 16:51</p></td>
+                          </tr>
+                          <tr>
+                            <td><br></td>
+                          </tr>
+                          <tr>
+                            <td><br></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Temporary Assignments</strong></td>
+                          </tr>
+                          <tr>
+                            <td><p class="ms-4 mb-0 mt-0">1 Pending</p></td>
+                          </tr>
+                          <tr>
+                            <td><p class="ms-4 mb-0 mt-0">1036 Completed</p></td>
+                          </tr>
+                          <tr>
+                            <td><p class="ms-4 mb-0 mt-0">187 Lost</p></td>
+                          </tr>
+                          <tr>
+                            <td><p class="ms-4 mb-0 mt-0">95.0 Days this period</p></td>
+                          </tr>
+                          <tr>
+                            <td><br></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Default Framework</strong></td>
+                          </tr>
+                          <tr>
+                            <td><p class="ms-4 mb-0 mt-0">Direct Sale</p></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Default Booking Mode</strong></td>
+                          </tr>
+                          <tr>
+                            <td><p class="ms-4 mb-0 mt-0">Direct Booking</p></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="col-lg-2 col-md-4 col-sm-4 ms-lg-2 mt-md-4 mt-sm-5">
+                        <table class="">
+                          <tr>
+                            <td><strong>File List</strong></td>
+                            <td><button class="btn btn-sm btn-outline-primary ms-5 mt-sm-4">
+                              Get Files
+                            </button></td>
+                          </tr>
+                        </table>
+                        <div class="mt-1 mt-md-5 mt-sm-5" style="text-align: end;">
+                          <div><p style="color: red;">Multiple Sites Exist</p></div>
+                          <div><p><strong>File Has Been Created</strong></p></div>
+                          <div><p><strong>Contract returned</strong></p></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  <div
+                    class="tab-pane fade show active"
+                    id="navs-pills-justified-assignment"
+                    role="tabpanel">
+                    <div
+                      id="accordionOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <div class="row">
+                            <div class="col-lg-8 col-md-11 col-sm-11 ms-lg-4 ms-md-1 ms-sm-1">
+                              <div class="card-header d-flex justify-content-between">
+                                <h5 class="card-title m-0 me-2">Assignments</h5>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn p-0"
+                                    type="button"
+                                    id="teamMemberList"
+                                    data-bs-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <i class="ti ti-dots-vertical ti-sm text-muted"></i>
+                                  </button>
+                                  <div
+                                    class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="teamMemberList"
+                                  >
+                                    <a class="dropdown-item" href="javascript:void(0);"
+                                      >Download</a
+                                    >
+                                    <a class="dropdown-item" href="javascript:void(0);"
+                                      >Refresh</a
+                                    >
+                                    <a class="dropdown-item" href="javascript:void(0);"
+                                      >Share</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="table-responsive">
+                                <table class="table table-borderless border-top">
+                                  <thead class="border-bottom">
+                                    <tr>
+                                      <th></th>
+                                      <th>Perm Asns</th>
+                                      <th>T2P Asns</th>
+                                      <th>D2D Asns</th>
+                                      <th>Leads</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div
+                                          class="d-flex justify-content-start align-items-center"
+                                        >
+                                          <div class="d-flex flex-column">
+                                            <p class="mb-0 fw-medium">Total</p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-dark">46</span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-dark">16</span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-dark">358</span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-dark">53</span>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div
+                                          class="d-flex justify-content-start align-items-center"
+                                        >
+                                          <div class="d-flex flex-column">
+                                            <p class="mb-0 fw-medium">Pending</p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-warning"
+                                            ><a href="pending.html">11</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-warning"
+                                            ><a href="pending.html">2</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-warning"
+                                            ><a href="pending.html">1</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-warning"
+                                            ><a href="pending.html">15</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div
+                                          class="d-flex justify-content-start align-items-center"
+                                        >
+                                          <div class="d-flex flex-column">
+                                            <p class="mb-0 fw-medium">Completed</p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-success"
+                                            ><a href="completed.html">0</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-success"
+                                            ><a href="completed.html">0</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-success"
+                                            ><a href="completed.html">0</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div
+                                          class="d-flex justify-content-start align-items-center"
+                                        >
+                                          <div class="d-flex flex-column">
+                                            <p class="mb-0 fw-medium">Lost</p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-danger"
+                                            ><a href="pullout.html">35</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-danger"
+                                            ><a href="pullout.html">14</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-danger"
+                                            ><a href="pullout.html">357</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-danger"
+                                            ><a href="pullout.html">38</a></span
+                                          >
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div
+                                          class="d-flex justify-content-start align-items-center"
+                                        >
+                                          <div class="d-flex flex-column">
+                                            <p class="mb-0 fw-medium"></p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-info">New Perm</span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-info">New Asn</span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-info">New Asn</span>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <span class="badge bg-label-info">New Lead</span>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                  <thead>
+                                    <tr>
+                                      <th colspan="3">
+                                        School Spending Data
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <!-- <tr>
+                                      <td>
+                                        <div
+                                          class="d-flex justify-content-start align-items-center"
+                                        >
+                                          <div class="d-flex flex-column">
+                                            <p class="mb-0 fw-medium">Academic year</p>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <p class="mb-0 fw-medium">Teaching staff</p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <p class="mb-0 fw-medium">Direct Supply Teaching Staff</p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <p class="mb-0 fw-medium">Direct Education Support Staff</p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="d-flex flex-column">
+                                          <p class="mb-0 fw-medium">Agency Supply Teaching Staff</p>
+                                        </div>
+                                      </td>
+                                    </tr> -->
+                                    <tr>
+                                      <td class="mb-0 fw-medium">
+                                        Academic year
+                                      </td>
+                                      <td class="mb-0 fw-medium">
+                                        Teaching staff
+                                      </td>
+                                      <td class="mb-0 fw-medium">
+                                        Direct Supply Teaching Staff
+                                      </td>
+                                      <td class="mb-0 fw-medium">
+                                        Direct Education Support Staff
+                                      </td>
+                                      <td class="mb-0 fw-medium">
+                                        Agency Supply Teaching Staff
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <!-- blue buttons -->
+                            <div class="col-lg-3 col-md-11 col-sm-11 mt-5 ms-lg-4 ms-md-0 ms-sm-0">
+                              <div class="">
+                                <ul class="list-unstyled mb-0">
+                                  <li>
+                                    <div class="demo-inline-spacing d-flex flex-column">
+                                      <button type="button" class="btn btn-primary">
+                                        No Go Teacher
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="demo-inline-spacing d-flex flex-column">
+                                      <button type="button" class="btn btn-primary">
+                                        Add School No Go List
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="demo-inline-spacing d-flex flex-column">
+                                      <button type="button" class="btn btn-primary">
+                                        Continuity
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="demo-inline-spacing d-flex flex-column">
+                                      <button type="button" class="btn btn-primary">
+                                        Teachers With Refs
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="demo-inline-spacing d-flex flex-column">
+                                      <button type="button" class="btn btn-primary">
+                                        Outstanding QAs
+                                      </button>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="demo-inline-spacing d-flex flex-column">
+                                      <button type="button" class="btn btn-primary">
+                                        View Specials
+                                      </button>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="navs-pills-justified-sales"
+                    role="tabpanel"
+                  >
+                    <p
+                      class="mb-0 text-danger text-center justify-content-center"
+                    >
+                      Awaiting more information
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="navs-pills-justified-financials"
+                    role="tabpanel"
+                  >
+                  <p
+                  class="mb-0 text-danger text-center justify-content-center"
+                >
+                  Awaiting more information
+                </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--/ Navbar pills -->
+            <div class="row">
+              <div class="col-xl-9 col-xl-4 mb-4">
+                <div class="card mb-4">
+                  <div
+                    class="card-header d-flex align-items-center justify-content-between"
+                  >
+                    <h5 class="mb-0">Notes - 2 read</h5>
+                  </div>
+                  <div class="card-body">
+                    <form>
+                      <div class="row mb-4">
+                        <label
+                          class="col-sm-3 col-form-label"
+                          for="basic-default-message"
+                          >There is no parking at the school so please get there
+                          early to find a parking</label
+                        >
+                        <div class="col-sm-9">
+                          <textarea
+                            id="basic-default-message"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Brian Belson contacted Mr Brian Belson on Apr 6, 2023 2:26PM and noted Test - Reset Link"
+                            aria-label="Brian Belson contacted Mr Brian Belson on Apr 6, 2023 2:26PM and noted Test - Reset Link"
+                            aria-describedby="basic-icon-default-message2"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="order-2 order-lg-1 mb-4">
+                      <ul class="list-unstyled">
+                        <div class="demo-inline-spacing">
+                          <button type="button" class="btn btn-label-primary">
+                            Open Site in Hub Spot
+                          </button>
+                          <button type="button" class="btn btn-label-primary">
+                            Today @ School
+                          </button>
+
+                          <button type="button" class="btn btn-primary">
+                            Contact History
+                          </button>
+                          <p>Schoot Status is Open - Not a school</p>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-md-6 order-2 order-lg-1 mb-4">
+                <ul class="list-unstyled mb-0">
+                  <div class="demo-inline-spacing">
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-square"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-mail"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-globe"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-letter-a"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-alarm"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-plane"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-clipboard-copy"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-camera"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-clock"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-books"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-mood-smile"></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-outline-primary"
+                    >
+                      <span class="ti ti-folder"></span>
+                    </button>
+                  </div>
+                  <div class="demo-inline-spacing">
+                    <button type="button" class="btn btn-label-primary">
+                      Refresh
+                    </button>
+                    <button type="button" class="btn btn-label-primary">
+                      Edit Contact
+                    </button>
+                    <button type="button" class="btn btn-label-primary">
+                      Edit School
+                    </button>
+                    <button type="button" class="btn btn-label-primary">
+                      Edit Address
+                    </button>
+                    <button type="button" class="btn btn-label-primary">
+                      Contact School
+                    </button>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <!-- Layout Demo -->
+
+              <!--/ Layout Demo -->
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column"
+                >
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    , made with ❤️ by
+                    <a
+                      href="https://JSBC Labs.com"
+                      target="_blank"
+                      class="fw-medium"
+                      >JSBC Labs</a
+                    >
+                  </div>
+                  <div class="d-none d-lg-inline-block">
+                    <a
+                      href="https://themeforest.net/licenses/standard"
+                      class="footer-link me-4"
+                      target="_blank"
+                      >License</a
+                    >
+                    <a
+                      href="https://1.envato.market/JSBC Labs_portfolio"
+                      target="_blank"
+                      class="footer-link me-4"
+                      >More Themes</a
+                    >
+
+                    <a
+                      href="https://demos.JSBC Labs.com/Step Teachers-html-admin-template/documentation/"
+                      target="_blank"
+                      class="footer-link me-4"
+                      >Documentation</a
+                    >
+
+                    <a
+                      href="https://JSBC Labs.ticksy.com/"
+                      target="_blank"
+                      class="footer-link d-none d-sm-inline-block"
+                      >Support</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+  </body>
+</html>
