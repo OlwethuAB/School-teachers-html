@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/completed.css" />
+    <link rel="stylesheet" href="assets/css/pending.css" />
 
     <!-- Core CSS -->
     <link
@@ -97,66 +97,82 @@
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
-        <!-- Menu -->
-         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-          <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
-              <span class="app-brand-text demo menu-text fw-bold">
-                <img height="42" src="assets/img/branding/step-teachers-logo (1).png" />
-              </span>
-            </a>
-            <a href="javascript:void(0);"
-              class="layout-menu-toggle menu-link text-large ms-auto">
-              <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
-              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
-            </a>
-          </div>
+       <!-- Menu -->
 
-          <div class="menu-inner-shadow"></div>
-          <ul class="menu-inner py-1">      
-            <!--Menu -->
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text" data-i18n="Menu">Menu</span>
-            </li>
-            <li class="menu-item">
-              <a href="/index.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-dashboard"></i>
-                <div data-i18n="Dashboard">Dashboard</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="/html/pending.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-                <div data-i18n="Pending">Pending</div>
-              </a>
-            </li>
-            <li class="menu-item active">
-              <a href="/html/completed.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-checkbox"></i>
-                <div data-i18n="Completed">Completed</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="/html/pullout.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
-                <div data-i18n="Pullout">Pullout</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="/html/Candidates.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-users"></i>
-                <div data-i18n="Candidates">Candidates</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="/html/layouts-school-screen.html" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-layout-grid"></i>
-                <div data-i18n="School Screen">School Screen</div>
-              </a>
-            </li>
-            </ul>
-          </aside>
-          <!--Menu End-->
+       <aside
+       id="layout-menu"
+       class="layout-menu menu-vertical menu bg-menu-theme"
+     >
+       <div class="app-brand demo">
+         <a href="" class="app-brand-link">
+           
+           <span class="app-brand-text demo menu-text fw-bold">
+             <img height="42" src="assets/img/branding/step-teachers-logo (1).png" />
+           </span>
+         </a>
+
+         <a
+           href="javascript:void(0);"
+           class="layout-menu-toggle menu-link text-large ms-auto"
+         >
+           <i
+             class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"
+           ></i>
+           <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+         </a>
+       </div>
+
+       <div class="menu-inner-shadow"></div>
+
+       <ul class="menu-inner py-1">
+      
+        
+
+         <!--Menu -->
+         <li class="menu-header small text-uppercase">
+          <span class="menu-header-text" data-i18n="Menu">Menu</span>
+        </li>
+        <li class="menu-item">
+          <a href="index.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-dashboard"></i>
+            <div data-i18n="Dashboard">Dashboard</div>
+          </a>
+        </li>
+        <li class="menu-item active">
+          <a href="pending.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+            <div data-i18n="Pending">Pending</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="completed.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-checkbox"></i>
+            <div data-i18n="Completed">Completed</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="pullout.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
+            <div data-i18n="Pullout">Pullout</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="Candidates.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-users"></i>
+            <div data-i18n="Candidates">Candidates</div>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="layouts-school-screen.html" class="menu-link">
+            <i class="menu-icon tf-icons ti ti-layout-grid"></i>
+            <div data-i18n="School Screen">School Screen</div>
+          </a>
+        </li>
+        </ul>
+       </aside>
+
+       <!--Menu End-->
+
         <!-- Layout container -->
         <div class="layout-page">
           <!-- Navbar -->
@@ -197,7 +213,6 @@
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
-              
 
                 <!-- Style Switcher -->
                 <li
@@ -520,7 +535,7 @@
                   >
                     <div class="avatar avatar-online">
                       <img
-                        src="../../assets/img/avatars/1.png"
+                        src="assets/img/avatars/1.png"
                         alt
                         class="h-auto rounded-circle"
                       />
@@ -536,7 +551,7 @@
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
                               <img
-                                src="../../assets/img/avatars/1.png"
+                                src="assets/img/avatars/1.png"
                                 alt
                                 class="h-auto rounded-circle"
                               />
@@ -652,7 +667,7 @@
                           <div class="d-flex">
                             <button
                               type="button"
-                              class="btn btn-label-success me-2"
+                              class="btn btn-label-warning me-2"
                             >
                               Open
                             </button>
@@ -664,16 +679,16 @@
                             />
                           </div>
                         </div>
-                        <button class="btn btn-success" type="button" disabled>
+                        <button class="btn btn-warning" type="button" disabled>
                           <span
                             class="spinner-grow me-1"
                             role="status"
                             aria-hidden="true"
                           ></span>
-                          Completed...
+                          Pending...
                         </button>
                         <div
-                          class="alert d-flex align-items-center bg-label-success mb-0"
+                          class="alert d-flex align-items-center bg-label-warning mb-0"
                         >
                           <div class="me-2">
                             <p class="mb-0">
@@ -697,17 +712,17 @@
                 </ul>
               </div>
               <div class="row">
-                <!--Left-->
+                <!-- Left -->
                 <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 mb-4 order-md-2 order-lg-0">
                   <div class="card">
                     <div
                       class="card-header pb-0 d-flex justify-content-between"
                     >
                       <div class="card-title mb-2">
-                        <h5 class="mb-0">Step Teachers high</h5>
+                        <h5 class="mb-0">Step Teachers High</h5>
                         <p class="text-muted">
-                          <span class="badge bg-label-success mb-0 me-2">Site</span
-                          >Main Site
+                          <span class="badge bg-label-warning mb-0">Site</span>
+                          Main Site
                         </p>
                       </div>
                       <div class="dropdown">
@@ -744,9 +759,9 @@
                         <div id="supportTracker">
                           <div class="12">
                             <label class="form-label" for="collapsible-address"
-                              >Address</label
-                            >
-                            <span class="ti ti-map"></span>
+                              >Address
+                              <span class="ti ti-map"></span>
+                            </label>
                             <textarea
                               name="collapsible-address"
                               class="form-control"
@@ -787,31 +802,34 @@
                       <div class="col-xl-7 col-md-12 col-sm-7 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4">
                         <div id="supportTracker">
                           <div class="demo-inline-spacing mb-3">
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-warning">
                               Direct Sale
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-warning">
                               Direct Booking
                             </button>
-                            <p class="float-end">*(If known)</p>
+                            <p class="mb-0">*(If known)</p>
                           </div>
 
                           <div class="demo-inline-spacing d-flex justify-content-start mb-3">
-                            <button type="button" class="btn btn-outline-success">
+                            <button type="button" class="btn btn-outline-warning">
                               SMS
                             </button>
-                            <button type="button" class="btn btn-icon btn-outline-success">
+                            <button type="button" class="btn btn-icon btn-outline-warning">
                               <span class="ti ti-phone-calling"></span>
                             </button>
     
-                            <button type="button" class="btn btn-outline-success">
+                            <button type="button" class="btn btn-outline-warning">
                               History
                             </button>
-                            <button type="button" class="btn btn-icon btn-outline-success">
+    
+                            <button type="button" class="btn btn-icon btn-outline-warning">
                               <span class="ti ti-mail"></span>
                             </button>
                           </div>
-                          <div class="d-flex justify-content-between w-100 table-responsive">
+                          <div
+                            class="d-flex justify-content-between w-100 table-responsive"
+                          >
                             <table class="table table-bordered">
                               <tr>
                                 <th>S</th>
@@ -831,12 +849,6 @@
                       </div>
 
                       <hr class="my-4" />
-                      <div class="d-flex justify-content-center">
-                        <p class="conf w-auto mx-4">
-                          Sch Confirmed by Marios Georgiou on 29 Jan
-                          2024 12:34
-                        </p>
-                      </div>
 
                       <!--Table-->
 
@@ -844,7 +856,7 @@
                     </div>
                   </div>
                   <div class="mb-4">
-                    <div class="card text-nowrap mt-4 table-responsive">
+                    <div class="pend card text-nowrap mt-4 table-responsive">
                       <table class="pending-table">
                         <tbody class="table-border-bottom-0">
                           <tr>
@@ -921,7 +933,7 @@
                       </table>
                     </div>
                   </div>
-                  <div class="form-check form-check-success mt-3">
+                  <div class="form-check form-check-warning mt-3">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -938,11 +950,11 @@
                     <div
                       class="col-xl-6 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4 demo-inline-spacing"
                     >
-                      <button type="button" class="btn btn-label-success me-2">
+                      <button type="button" class="btn btn-label-warning me-2">
                         History</button
-                      ><button type="button" class="btn btn-label-success me-2">
+                      ><button type="button" class="btn btn-label-warning me-2">
                         CV Search</button
-                      ><button type="button" class="btn btn-label-success me-2">
+                      ><button type="button" class="btn btn-label-warning me-2">
                         Conf list
                       </button>
                     </div>
@@ -952,7 +964,7 @@
                       <div class="d-flex">
                         <button
                           type="button"
-                          class="btn btn-label-success me-2 text-nowrap"
+                          class="btn btn-label-warning me-2 text-nowrap"
                         >
                           Max Miles
                         </button>
@@ -964,8 +976,10 @@
                             placeholder="20"
                           />
                         </div>
-                        <button type="button"
-                          class="btn btn-label-success ms-2 p-2 text-nowrap">
+                        <button
+                          type="button"
+                          class="btn btn-label-warning ms-2 p-2 text-nowrap"
+                        >
                           <span class="ti ti-world"></span>
                         </button>
                       </div>
@@ -1048,7 +1062,11 @@
                         </li>
                       </ul>
                       <div class="tab-content">
-                        <div class="tab-pane fade show active"  id="navs-pills-justified-candidate"  role="tabpanel">
+                        <div
+                          class="tab-pane fade show active"
+                          id="navs-pills-justified-candidate"
+                          role="tabpanel"
+                        >
                           <div
                             id="accordionOne"
                             class="accordion-collapse collapse show"
@@ -1104,27 +1122,27 @@
                                       >
                                         <button
                                           type="button"
-                                          class="btn btn-icon btn-outline-success"
+                                          class="btn btn-icon btn-outline-warning"
                                         >
                                           <span class="ti ti-book"></span>
                                         </button>
                                         <button
                                           type="button"
-                                          class="btn btn-icon btn-outline-success"
+                                          class="btn btn-icon btn-outline-warning"
                                         >
                                           <span
                                             class="ti ti-currency-pound"
                                           ></span></button
                                         ><button
                                           type="button"
-                                          class="btn btn-icon btn-outline-success"
+                                          class="btn btn-icon btn-outline-warning"
                                         >
                                           <span
                                             class="ti ti-phone-check"
                                           ></span></button
                                         ><button
                                           type="button"
-                                          class="btn btn-icon btn-outline-success"
+                                          class="btn btn-icon btn-outline-warning"
                                         >
                                           <span
                                             class="ti ti-device-mobile-message"
@@ -1133,7 +1151,7 @@
 
                                         <button
                                           type="button"
-                                          class="btn btn-outline-success"
+                                          class="btn btn-outline-warning"
                                         >
                                           History
                                         </button>
@@ -1164,39 +1182,28 @@
                                   >
                                     <button
                                       type="button"
-                                      class="btn btn-success w-100 ms-xl-3 ms-lg-3"
+                                      class="btn btn-warning w-100 ms-xl-3 ms-lg-3"
                                     >
-                                      Road route</button
-                                    ><button
+                                      Road route
+                                    </button>
+                                    <button
                                       type="button"
-                                      class="btn btn-success w-100 ms-xl-3 ms-lg-3"
+                                      class="btn btn-warning w-100 ms-xl-3 ms-lg-3"
                                     >
-                                      London Route</button
-                                    ><button
+                                      London Route
+                                    </button>
+                                    <button
                                       type="button"
-                                      class="btn btn-success w-100 ms-xl-3 ms-lg-3"
+                                      class="btn btn-warning w-100 ms-xl-3 ms-lg-3"
                                     >
                                       Specialist
                                     </button>
                                   </div>
                                 </div>
                               </div>
-                              <div class="mt-3 row">
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 d-flex justify-content-center mb-md-3 mb-sm-3">
-                                  <button class="btn btn-outline-success py-lg-0 py-md-2 py-sm-2 ">
-                                    Pullout
-                                  </button>
-                                </div>
-                                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                                  <p class="conf w-100">
-                                    Tch Confirmed by Marios Georgiou on 29 Jan
-                                    2024 12:34
-                                  </p>
-                                </div>
-                              </div>
                             </div>
                           </div>
-                          <div class="form-check form-check-success mt-3">
+                          <div class="form-check form-check-warning mt-3">
                             <input
                               class="form-check-input"
                               type="checkbox"
@@ -1223,27 +1230,27 @@
                                   <td class="border pb-5 pe-5">Mobile</td>
                                 </tr>
                               </table>
-                              <button class="sm-btn btn-sm btn-label-success">
+                              <button class="sm-btn btn-sm btn-label-warning">
                                 Auto SMS
                               </button>
-                              <button class="sm-btn btn-sm btn-label-success">
+                              <button class="sm-btn btn-sm btn-label-warning">
                                 Text Message
                               </button>
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-4">
-                              <button class="log-btn btn-sm btn-success">
+                              <button class="log-btn btn-sm btn-warning">
                                 No answer
                               </button>
-                              <button class="log-btn btn-sm btn-success">
+                              <button class="log-btn btn-sm btn-warning">
                                 A/ Machine
                               </button>
-                              <button class="log-btn btn-sm btn-success">
+                              <button class="log-btn btn-sm btn-warning">
                                 Engaged
                               </button>
-                              <button class="log-btn btn-sm btn-success">
+                              <button class="log-btn btn-sm btn-warning">
                                 Will do asn
                               </button>
-                              <button class="log-btn btn-sm btn-success">
+                              <button class="log-btn btn-sm btn-warning">
                                 Will not do
                               </button>
                             </div>
@@ -1258,9 +1265,9 @@
                                     id=""
                                     class="pe-5 col-7"
                                   >
-                                  <option value="phone">Phone</option>
-                                  <option value="email">Email</option>
-                                  <option value="sms">SMS</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="email">Email</option>
+                                    <option value="sms">SMS</option>
                                   </select>
                                 </div>
                                 <div class="row mb-2">
@@ -1320,7 +1327,7 @@
                                 </div>
                                 <button
                                   type="submit"
-                                  class="btn btn-sm btn-outline-success"
+                                  class="btn btn-sm btn-outline-warning"
                                 >
                                   Log Contact
                                 </button>
@@ -1335,15 +1342,9 @@
                                 <p>Record Count: 164</p>
                               </div>
                               <div class="col-xl-6 col-lg-8 col-md-8 col-sm-8">
-                                <button class="btn btn-label-success btn-sm m-1">
-                                  Do not use
-                                </button>
-                                <button class="btn btn-label-success btn-sm m-1">
-                                  Add to list
-                                </button>
-                                <button class="btn btn-label-success btn-sm m-1">
-                                  Choose
-                                </button>
+                                <button class="btn btn-label-warning btn-sm m-1">Do not use</button>
+                                <button class="btn btn-label-warning btn-sm m-1">Add to list</button>
+                                <button class="btn btn-label-warning btn-sm m-1">Choose</button>
                               </div>
                             </div>
 
@@ -1870,26 +1871,26 @@
                             </select>
                           </div>
                           <div class="col-md-6">
-                            <label class="switch switch-square switch-lg mt-3">
-                              <div class="row">
-                                <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6 col-6">
-                                  <span class="switch-label small">
-                                      Subj. Specialist Required
-                                  </span>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">                                    
-                                  <input type="checkbox" class="switch-input" />
-                                  <span class="switch-toggle-slider">
-                                    <span class="switch-on">
-                                      <i class="ti ti-check"></i>
+                              <label class="switch switch-square switch-lg mt-3">
+                                <div class="row">
+                                  <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6 col-6">
+                                    <span class="switch-label small">
+                                        Subj. Specialist Required
                                     </span>
-                                    <span class="switch-off">
-                                      <i class="ti ti-x"></i>
-                                    </span>
-                                  </span>
+                                  </div>
+                                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">                                    
+                                    <input type="checkbox" class="switch-input" />
+                                    <span class="switch-toggle-slider">
+                                      <span class="switch-on">
+                                        <i class="ti ti-check"></i>
+                                      </span>
+                                      <span class="switch-off">
+                                        <i class="ti ti-x"></i>
+                                      </span>
+                                    </span>`
+                                  </div>
                                 </div>
-                              </div>
-                            </label>
+                              </label>
                           </div>
                           <div class="col-md-6">
                             <label class="form-label" for="multicol-country"
@@ -1927,7 +1928,7 @@
                               <option value="d2d">D2D</option>
                             </select>
                           </div>
-                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+                          <div class="col-md-6">
                             <label
                               class="m-0 me-2 form-label"
                               for="multicol-country mb-4"
@@ -1949,7 +1950,7 @@
                               </label>
                             </div>
                           </div>
-                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+                          <div class="col-md-6">
                             <label
                               class="m-0 me-2 form-label"
                               for="multicol-country mb-4"
@@ -2037,36 +2038,33 @@
                             />
                           </div>
 
-                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-between mt-2">
-                            <div class="row">
-                              <div class="col-xl-12 col-lg-11 col-md-7 col-sm-7 col-7">
-                                <label class="switch switch-square switch-lg mt-md-3 mt-sm-4">
-                                  <span class="switch-label">Out of hours</span>
-                                  <input type="checkbox" class="switch-input" />
-                                  <span class="switch-toggle-slider">
-                                    <span class="switch-on">
-                                      <i class="ti ti-check"></i>
-                                    </span>
-                                    <span class="switch-off">
-                                      <i class="ti ti-x"></i>
-                                    </span>
+                          <div class="col-md-6">
+                            <label
+                              class="m-0 me-2 form-label"
+                              for="multicol-country mb-4"
+                            ></label>
+                            <div class="card-title-elements">
+                              <label class="switch switch-square switch-lg">
+                                <span class="switch-label">Out of hours</span>
+                                <input type="checkbox" class="switch-input" />
+                                <span class="switch-toggle-slider">
+                                  <span class="switch-on">
+                                    <i class="ti ti-check"></i>
                                   </span>
-                                </label>
-                              </div>
-                              <div class="col-xl-12 col-lg-11 col-md-4 col-sm-4 col-4">
-                                <button type="button" class="btn rounded-pill btn-outline-success mt-2">
-                                  <span class="ti-xs ti ti-eraser me-1"></span
-                                  >Delete
-                                </button>
-                              </div>
+                                  <span class="switch-off">
+                                    <i class="ti ti-x"></i>
+                                  </span>
+                                </span>
+                              </label>
                             </div>
-                          </div>
-                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-center mt-4">
-                            <div class="mt-1">
-                              <p class="conf">
-                                Assignment completed by Marios Georgiou on 29 Jan 2024
-                                12:34
-                              </p>
+                            <div class="col-md-6 mt-4">
+                              <button
+                                type="button"
+                                class="btn rounded-pill btn-outline-warning"
+                              >
+                                <span class="ti-xs ti ti-eraser me-1"></span
+                                >Delete
+                              </button>
                             </div>
                           </div>
 
@@ -2094,46 +2092,46 @@
                                 class="col-xl-7 col-md-12 col-sm-5 col-12 mb-xl-0 mb-md-4 mb-sm-0 mb-4"
                               >
                                 <div class="demo-inline-spacing mb-4">
-                                  <button type="button" class="btn btn-success">
+                                  <button type="button" class="btn btn-warning">
                                     <span class="ti-xs ti ti-plus me-1"></span
                                     >New Asn</button
                                   ><button
                                     type="button"
-                                    class="btn btn-success"
+                                    class="btn btn-warning"
                                   >
                                     <span class="ti-xs ti ti-copy me-1"></span
                                     >Copy Me</button
                                   ><button
                                     type="button"
-                                    class="btn btn-success"
+                                    class="btn btn-warning"
                                   >
                                     Hub Spot
                                   </button>
-                                  <button type="button" class="btn btn-success">
+                                  <button type="button" class="btn btn-warning">
                                     List Days</button
                                   ><button
                                     type="button"
-                                    class="btn btn-success"
+                                    class="btn btn-warning"
                                   >
                                     Continuity</button
                                   ><button
                                     type="button"
-                                    class="btn btn-success"
+                                    class="btn btn-warning"
                                   >
                                     Price Profile</button
                                   ><button
                                     type="button"
-                                    class="btn btn-success"
+                                    class="btn btn-warning"
                                   >
                                     No Go Tch</button
                                   ><button
                                     type="button"
-                                    class="btn btn-success"
+                                    class="btn btn-warning"
                                   >
                                     Interviews</button
                                   ><button
                                     type="button"
-                                    class="btn rounded-pill btn-outline-success"
+                                    class="btn rounded-pill btn-outline-warning"
                                   >
                                     Reset
                                   </button>
@@ -2149,12 +2147,8 @@
                                     class="select2 form-select"
                                     data-allow-clear="true"
                                   >
-                                    <option value="">Locked</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Bangladesh">
-                                      Bangladesh
-                                    </option>
-                                    <option value="Belarus">Belarus</option>
+                                    <option value="locked">Locked</option>
+                                    <option value="unlocked">Unlocked</option>
                                   </select>
                                 </div>
                               </div>
